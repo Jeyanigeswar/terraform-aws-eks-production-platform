@@ -38,3 +38,21 @@ terraform/
 kubernetes/
 docs/
 architecture/
+
+## IAM Architecture
+
+### EKS Cluster Role
+
+Responsible for:
+
+- Cluster management
+- Kubernetes control plane integration
+- AWS API communication
+
+### EKS Node Group Role
+
+Responsible for:
+
+- EC2 worker nodes
+- Pulling images from ECR
+- VPC networking via CNI
