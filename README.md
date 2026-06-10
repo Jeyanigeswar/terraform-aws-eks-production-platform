@@ -56,3 +56,20 @@ Responsible for:
 - EC2 worker nodes
 - Pulling images from ECR
 - VPC networking via CNI
+
+## Amazon EKS
+
+### Features
+
+- Managed Kubernetes Control Plane
+- Managed Node Groups
+- VPC CNI
+- CoreDNS
+- Kube Proxy
+- Auto Scaling Ready
+
+### Kubernetes Resources
+
+- Deployment
+- Service
+- Ingress
