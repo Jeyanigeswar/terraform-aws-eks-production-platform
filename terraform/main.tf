@@ -16,3 +16,14 @@ module "eks" {
   node_role_arn      = module.iam.node_role_arn
   private_subnet_ids = module.vpc.private_subnet_ids
 }
+
+module "rds" {
+
+  source = "./modules/rds"
+
+  environment = var.environment
+
+  private_subnet_ids = module.vpc.private_subnet_ids
+
+  vpc_id = module.vpc.vpc_id
+}

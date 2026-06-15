@@ -15,3 +15,4 @@ output "private_subnet_ids" {
     aws_subnet.private_2.id
   ]
 }
+
